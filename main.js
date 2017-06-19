@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-  var elScore = document.getElementById('score')
-    , c = 0
-    , score = 0
-    , start = 0;
+  elScore = document.getElementById('score');
+  c = 0;
   document.getElementsByClassName('start')[0].onclick = function() {
     document.getElementsByClassName('start')[0].style.display = "none";
     document.getElementsByClassName('people')[0].style.display = "inline-block";
@@ -13,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function(){
   };
 
   document.querySelector('.people').onmouseover = function() {
+    clearInterval(elScore.innerText)
     document.getElementsByClassName('start')[0].style.display = "block";
     document.getElementsByClassName('start')[0].innerHTML = "Please Don't Touch Me Again.";
     document.getElementsByClassName('people')[0].style.display = "none";
   };
-
 });

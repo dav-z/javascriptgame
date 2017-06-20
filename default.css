@@ -20,70 +20,24 @@ h1 {
   border: 1px solid white;
   border-radius: 100px;
   box-shadow: 5px 5px 5px black;
+  cursor: no-drop;
 }
 .start:hover {
   background-color: white;
   color: black;
   box-shadow: none;
 }
-.people {
-  text-align: center;
-  display: none;
-}
-span {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-	margin: -280px 40px 54px  -34px;
-	background:url("dannydorrito.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation: fallingLeaves 10s infinite linear;
-}
-.people span:nth-child(5n+5) {
-  -webkit-animation-delay: 1.3s;
-  -moz-animation-delay: 1.3s;
-}
-.people span:nth-child(3n+2) {
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-}
-.people span:nth-child(2n+5) {
-  -webkit-animation-delay: 1.7s;
-  -moz-animation-delay: 1.7s;
-}
-.people span:nth-child(3n+10) {
-  -webkit-animation-delay: 2.7s;
-  -moz-animation-delay: 2.7s;
-}
-.people span:nth-child(7n+2) {
-  -webkit-animation-delay: 3.5s;
-  -moz-animation-delay: 3.5s;
-}
-.people span:nth-child(4n+5) {
-  -webkit-animation-delay: 5.5s;
-  -moz-animation-delay: 5.5s;
-}
-.people span:nth-child(3n+7) {
-  -webkit-animation-delay: 8s;
-  -moz-animation-delay: 8s;
-}
-@keyframes fallingLeaves {
-  0% {
-	-webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-	-webkit-transform: translate(100px, 600px) rotateZ(270deg);
-  }
-  100% {
-	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
-  }
-}
-
 #score {
   position: absolute;
   left: 20px;
   bottom: 0;
   font-size: 30px;
   background-color: rgba(0,0,0,.8);
+}
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l {
+width: 70px;
+height: 70px;
+position: fixed;
+display: none;
+cursor: no-drop;
 }

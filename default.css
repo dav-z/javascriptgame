@@ -30,7 +30,7 @@ h1 {
   text-align: center;
   display: none;
 }
-.people span {
+span {
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -38,8 +38,7 @@ h1 {
 	background:url("dannydorrito.gif");
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: fallingLeaves 10s infinite  linear;
-  -moz-animation: fallingLeaves 10s infinite  linear;
+  animation: fallingLeaves 10s infinite linear;
 }
 .people span:nth-child(5n+5) {
   -webkit-animation-delay: 1.3s;
@@ -69,18 +68,7 @@ h1 {
   -webkit-animation-delay: 8s;
   -moz-animation-delay: 8s;
 }
-@-webkit-keyframes fallingLeaves {
-  0% {
-	-webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-	-webkit-transform: translate(100px, 600px) rotateZ(270deg);
-  }
-  100% {
-	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
-  }
-}
-@-moz-keyframes fallingLeaves {
+@keyframes fallingLeaves {
   0% {
 	-webkit-transform: translate(0, 0px) rotateZ(0deg);
   }
